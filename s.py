@@ -6,7 +6,7 @@ s.listen(1)
 client, addr = s.accept()
 while True:
     data = client.recv(1024)
-    if len(data) > 1024 or data == 'close':
+    if len(data) > 1024 or data == b'close':
         client.close()
         break
     else:
