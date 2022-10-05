@@ -11,5 +11,5 @@ while True:
         break
     else:
         client.send(data)
-        print data
+        print(data)
     s.close()
